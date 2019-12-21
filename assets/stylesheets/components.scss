@@ -1,0 +1,20 @@
+@import "variables.scss";
+
+@mixin filled-button {
+    font-size: 17px;
+    border: none;
+    color: #FFFFFF;
+    background-color: $corporate-color;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@mixin empty-button  {
+    font-size: 17px;
+    border: 1px solid $corporate-color;
+    color: $corporate-color;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    text-decoration: none;
+}
+

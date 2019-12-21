@@ -1,0 +1,207 @@
+@import "variables.scss";
+@import "components.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body, ul, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    background-color: #F0F1F1;
+}
+
+.wide-container {
+    padding: 0 calc(50% - 475px);
+}
+
+.tight-container {
+    margin: 0 calc(50% - 475px);
+}
+
+.info-header {
+    display: flex;
+    padding: 3px 80px;
+    background-color: #2D4992;
+
+    &__contacts {
+        display: flex;
+        list-style: none;
+        margin-left: auto;
+
+        &-item {
+            display: flex;
+            margin-right: 20px;
+        }
+        
+        &-item:last-child {
+            margin-right: 0;
+        }
+        
+        &-item::before {
+            content: "";
+            display: block;
+            margin-right: 4px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &-phone_num1::before {
+            width: 17px;
+            background-image: url(../images/phone-icon.png);
+        }
+
+        &-phone_num2::before {
+            width: 15px;
+            background-image: url(../images/mobile-phone-icon.png);
+        }
+        
+        &-email::before {
+            width: 26px;
+            background-image: url(../images/email-icon.png);
+        }
+    }
+}
+
+.main-header {
+    
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFFFFF;
+
+        &-search {
+            display: flex;
+            
+            &-field {
+                width: 360px;
+                padding: 8px 20px;
+                border: 1px solid rgba(0, 0, 0, 0.28);
+                border-right: none;
+            }
+
+            &-btn {
+                @include filled-button;
+
+                width: 47px;
+                background-image: url("../images/search-icon.png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &-btn:hover {
+                background-color: $corporate-color_dark;
+            }
+        }
+
+        &-cart {
+            display: flex;
+            height: 34px;
+
+            &-btn {
+                @include filled-button;
+
+                width: 50px;
+                background-image: url("../images/cart-icon.png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &-link {
+                @include filled-button;
+                
+                text-emphasis: center;
+                font-size: 12px;
+                width: 90px;
+                border-left: 1px solid #B0B0B0;
+                color: #FFFFFF;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &-btn:hover,
+            &-link:hover {
+                background-color: $corporate-color_dark;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+
+        background-color: $corporate-color;
+        list-style: none;
+
+        &-link {
+            display: block;
+            padding: 17px 35px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        
+        &-link:hover {
+            background-color: $corporate-color_dark;
+        }
+    }
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../images/keyboard.png");
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: multiply;
+    padding: 55px 28px 10px 28px;
+
+    &__page-title {
+        margin-bottom: 23px;
+    }
+
+    &__make-order-link {
+        @include filled-button;
+        padding: 8px 28px;
+        margin-right: auto;
+    }
+
+    &__make-order-link:hover {
+        background-color: $corporate-color_dark;
+    }
+
+    &__other-links {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+
+        &-forum-link {
+            @include empty-button;
+            padding: 8px 28px;
+            margin-bottom: 12px;
+        }
+
+        &-forum-link:hover {
+            background-color: $corporate-color_dark;
+            border-color: $corporate-color_dark;
+            color: #FFFFFF;
+        }
+
+        &-feedback-link {
+            @include filled-button;
+            padding: 8px 28px;
+        }
+
+        &-feedback-link:hover {
+            background-color: $corporate-color_dark;
+        }
+    }
+}
