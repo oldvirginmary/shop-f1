@@ -195,7 +195,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: url("../images/keyboard.jpg");
-  background-size: 100%;
+  background-size: 150%;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: multiply;
   padding: 55px 28px 10px 28px;
