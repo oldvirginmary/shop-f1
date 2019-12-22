@@ -164,7 +164,7 @@ body {
     }
 }
 
-.banner {
+.page-banner {
     display: flex;
     flex-direction: column;
 
@@ -174,7 +174,7 @@ body {
     background-blend-mode: multiply;
     padding: 55px 28px 10px 28px;
 
-    &__page-title {
+    &__title {
         font-size: 36px;
         margin-bottom: 23px;
     }
@@ -217,11 +217,11 @@ body {
     }
 }
 
-.main {
+.main-info {
     background-color: #FFFFFF;
     color: #000000;
 
-    .main-section__title {
+    .section-title {
         padding: 34px 0 0 40px;
         color: #6C6C6C;
         border-bottom: 5px solid #DDDDDD;

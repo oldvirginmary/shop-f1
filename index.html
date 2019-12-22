@@ -25,37 +25,37 @@
             <a class="main-header__top-logo" href="index.html">
                 <img src="assets/images/logo.png" alt="">
             </a>
-            <div class="main-header__top-search">
-                <input class="main-header__top-search-field" type="text" placeholder="Поиск...">
+            <form class="main-header__top-search" action="#" method="GET">
+                <input class="main-header__top-search-field" type="text" placeholder="Поиск..." name="search">
                 <button class="main-header__top-search-btn"></button>
-            </div>
+            </form>
             <div class="main-header__top-cart">
                 <button class="main-header__top-cart-btn"></button>
-                <a class="main-header__top-cart-link">Товары(<span id="cart-items-quantity">0</span>)</a>
+                <a class="main-header__top-cart-link" href="#">Товары(<span id="cart-items-quantity">0</span>)</a>
             </div>
         </div>
         <ul class="main-header__nav wide-container">
             <li><a class="main-header__nav-link" href="#">Главная</a></li>
             <li><a class="main-header__nav-link" href="#">Каталог товаров</a></li>
-            <li><a class="main-header__nav-link main-header__nav-link_current" href="#">Сервис</a></li>
+            <li><a class="main-header__nav-link main-header__nav-link_current">Сервис</a></li>
             <li><a class="main-header__nav-link" href="#">Покупателям</a></li>
             <li><a class="main-header__nav-link" href="#">Контакты</a></li>
         </ul>
     </header>
-    <header class="banner">
-        <h1 class="banner__page-title">
+    <header class="page-banner">
+        <h1 class="page-banner__title">
             Заправка и ремонт <br>
             компьютеной и орг. техники
         </h1>
-        <a class="banner__make-order-link" href="#">Заказать ремонт</a>
-        <div class="banner__other-links">
-            <a class="banner__other-links-forum-link" href="#">Форум</a>
-            <a class="banner__other-links-feedback-link" href="#">Обратная связь</a>
+        <a class="page-banner__make-order-link" href="#">Заказать ремонт</a>
+        <div class="page-banner__other-links">
+            <a class="page-banner__other-links-forum-link" href="#">Форум</a>
+            <a class="page-banner__other-links-feedback-link" href="#">Обратная связь</a>
         </div>
     </header>
-    <main class="main tight-container">
+    <main class="main-info tight-container">
         <section class="tech-repair">
-            <h2 class="tech-repair__title main-section__title">Ремонт компьютерной и орг. техники</h2>
+            <h2 class="tech-repair__title section-title">Ремонт компьютерной и орг. техники</h2>
             <ul class="tech-repair__services">
                 <li class="tech-repair__services-item">
                     <div class="tech-repair__services-item-mark"></div>
@@ -105,7 +105,7 @@
             </ul>
         </section>
         <section class="tech-refueling">
-            <h2 class="tech-refueling__title main-section__title">Ремонт компьютерной и орг. техники</h2>
+            <h2 class="tech-refueling__title section-title">Ремонт компьютерной и орг. техники</h2>
             <strong class="tech-refueling__description">
                 Выберите производителя
             </strong>
@@ -152,14 +152,15 @@
         <strong class="main-footer__description">Подпишитесь на рассылку новостей от SHOPF1</strong>
         <form class="main-footer__subscribe-form" action="#" method="POST">
             <input class="main-footer__subscribe-form-field" 
-                type="text"
-                placeholder="Введите ваш email адрес">
+                type="email"
+                placeholder="Введите ваш email адрес"
+                name="email">
             <button class="main-footer__subscribe-form-btn">Подписаться</button>
         </form>
         <ul class="main-footer__nav">
-            <li><a class="main-footer__nav-item-link main-footer__nav-item-link_current" href="index.html">Главная</a></li>
+            <li><a class="main-footer__nav-item-link" href="index.html">Главная</a></li>
             <li><a class="main-footer__nav-item-link" href="#">Статьи</a></li>
-            <li><a class="main-footer__nav-item-link" href="#">Услуги</a></li>
+            <li><a class="main-footer__nav-item-link main-footer__nav-item-link_current" href="#">Услуги</a></li>
             <li><a class="main-footer__nav-item-link" href="#">Контакты</a></li>
             <li><a class="main-footer__nav-item-link" href="#">О компании</a></li>
         </ul>

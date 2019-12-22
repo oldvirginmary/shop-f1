@@ -203,7 +203,7 @@ body {
   background-color: #1F91D1;
 }
 
-.banner {
+.page-banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,12 +218,12 @@ body {
   padding: 55px 28px 10px 28px;
 }
 
-.banner__page-title {
+.page-banner__title {
   font-size: 36px;
   margin-bottom: 23px;
 }
 
-.banner__make-order-link {
+.page-banner__make-order-link {
   display: block;
   font-size: 17px;
   text-align: center;
@@ -236,11 +236,11 @@ body {
   margin-right: auto;
 }
 
-.banner__make-order-link:hover {
+.page-banner__make-order-link:hover {
   background-color: #1F91D1;
 }
 
-.banner__other-links {
+.page-banner__other-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,7 +251,7 @@ body {
   margin-left: auto;
 }
 
-.banner__other-links-forum-link {
+.page-banner__other-links-forum-link {
   display: block;
   font-size: 17px;
   text-align: center;
@@ -264,13 +264,13 @@ body {
   margin-bottom: 12px;
 }
 
-.banner__other-links-forum-link:hover {
+.page-banner__other-links-forum-link:hover {
   background-color: #1F91D1;
   border-color: #1F91D1;
   color: #FFFFFF;
 }
 
-.banner__other-links-feedback-link {
+.page-banner__other-links-feedback-link {
   display: block;
   font-size: 17px;
   text-align: center;
@@ -282,22 +282,22 @@ body {
   padding: 8px 28px;
 }
 
-.banner__other-links-feedback-link:hover {
+.page-banner__other-links-feedback-link:hover {
   background-color: #1F91D1;
 }
 
-.main {
+.main-info {
   background-color: #FFFFFF;
   color: #000000;
 }
 
-.main .main-section__title {
+.main-info .section-title {
   padding: 34px 0 0 40px;
   color: #6C6C6C;
   border-bottom: 5px solid #DDDDDD;
 }
 
-.main .tech-repair__services {
+.main-info .tech-repair__services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,7 +316,7 @@ body {
   font-size: 14px;
 }
 
-.main .tech-repair__services-item {
+.main-info .tech-repair__services-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,7 +326,7 @@ body {
   width: 400px;
 }
 
-.main .tech-repair__services-item-mark {
+.main-info .tech-repair__services-item-mark {
   width: 60px;
   height: 50px;
   background-image: url(../images/check-mark.png);
@@ -335,11 +335,11 @@ body {
   margin-right: 10px;
 }
 
-.main .tech-repair__services-item-text {
+.main-info .tech-repair__services-item-text {
   border-bottom: 1px solid #B1B1B1;
 }
 
-.main .tech-refueling {
+.main-info .tech-refueling {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,7 +351,7 @@ body {
            Переопределяет image-picker стили */
 }
 
-.main .tech-refueling__description {
+.main-info .tech-refueling__description {
   display: block;
   margin: 15px auto 0 auto;
   font-size: 16px;
@@ -361,7 +361,7 @@ body {
   padding: 6px 25px;
 }
 
-.main .tech-refueling .image_picker_selector {
+.main-info .tech-refueling .image_picker_selector {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +375,7 @@ body {
   margin-bottom: 46px;
 }
 
-.main .tech-refueling__make-order-btn {
+.main-info .tech-refueling__make-order-btn {
   display: block;
   font-size: 17px;
   text-align: center;
@@ -388,7 +388,7 @@ body {
   margin: 0 auto 100px auto;
 }
 
-.main .tech-refueling__make-order-btn:hover {
+.main-info .tech-refueling__make-order-btn:hover {
   background-color: #1F91D1;
 }
 
