@@ -107,6 +107,7 @@ body {
 .main-header__top-search-btn {
   display: block;
   font-size: 17px;
+  text-align: center;
   border: none;
   color: #FFFFFF;
   background-color: #12B8FF;
@@ -132,6 +133,7 @@ body {
 .main-header__top-cart-btn {
   display: block;
   font-size: 17px;
+  text-align: center;
   border: none;
   color: #FFFFFF;
   background-color: #12B8FF;
@@ -146,6 +148,7 @@ body {
 .main-header__top-cart-link {
   display: block;
   font-size: 17px;
+  text-align: center;
   border: none;
   color: #FFFFFF;
   background-color: #12B8FF;
@@ -222,6 +225,7 @@ body {
 .banner__make-order-link {
   display: block;
   font-size: 17px;
+  text-align: center;
   border: none;
   color: #FFFFFF;
   background-color: #12B8FF;
@@ -249,6 +253,7 @@ body {
 .banner__other-links-forum-link {
   display: block;
   font-size: 17px;
+  text-align: center;
   border: 1px solid #12B8FF;
   color: #12B8FF;
   background-color: rgba(255, 255, 255, 0);
@@ -267,6 +272,7 @@ body {
 .banner__other-links-feedback-link {
   display: block;
   font-size: 17px;
+  text-align: center;
   border: none;
   color: #FFFFFF;
   background-color: #12B8FF;
@@ -371,6 +377,7 @@ body {
 .main .tech-refueling__make-order-btn {
   display: block;
   font-size: 17px;
+  text-align: center;
   border: none;
   color: #FFFFFF;
   background-color: #12B8FF;
@@ -423,6 +430,7 @@ body {
 .main-footer__subscribe-form-btn {
   display: block;
   font-size: 17px;
+  text-align: center;
   border: none;
   color: #FFFFFF;
   background-color: #12B8FF;
