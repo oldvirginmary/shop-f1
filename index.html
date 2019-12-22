@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.1/image-picker.css"
+        integrity="sha256-Qhni85NHfWcvEDLzPs8AEHLas/8BBmli5UhSDp8QBcc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/stylesheets/style.css">
     <title>ShopF1</title>
 </head>
@@ -50,5 +53,129 @@
             <a class="banner__other-links-feedback-link" href="#">Обратная связь</a>
         </div>
     </header>
+    <main class="main tight-container">
+        <section class="tech-repair">
+            <h2 class="tech-repair__title main-section__title">Ремонт компьютерной и орг. техники</h2>
+            <ul class="tech-repair__services">
+                <li class="tech-repair__services-item">
+                    <div class="tech-repair__services-item-mark"></div>
+                    <p class="tech-repair__services-item-text">
+                        Обслуживание, модернизация и ремонт <br>
+                        компьютерной техники и серверов;
+                    </p>
+                </li>
+                <li class="tech-repair__services-item">
+                    <div class="tech-repair__services-item-mark"></div>
+                    <p class="tech-repair__services-item-text">
+                        Монтаж и обслуживание <br>
+                        локальных вычислительных сетей (ЛВС), <br>
+                        настройка компьютерных сетей, и сети интернет;
+                    </p>
+                </li>
+                <li class="tech-repair__services-item">
+                    <div class="tech-repair__services-item-mark"></div>
+                    <p class="tech-repair__services-item-text">
+                        Настройка и установка программного <br>
+                        обеспечения на компьютерах предприятия;
+                    </p>
+                </li>
+                <li class="tech-repair__services-item">
+                    <div class="tech-repair__services-item-mark"></div>
+                    <p class="tech-repair__services-item-text">
+                        Обслуживание, подключение и <br>
+                        настройка любой оргтехники, <br>
+                        ремонт принтеров и заправка картриджей;
+                    </p>
+                </li>
+                <li class="tech-repair__services-item">
+                    <div class="tech-repair__services-item-mark"></div>
+                    <p class="tech-repair__services-item-text">
+                        Установка антивирусного программного <br>
+                        обеспечения (ПО), лечение и удаление <br>
+                        вирусов любой сложности;
+                    </p>
+                </li>
+                <li class="tech-repair__services-item">
+                    <div class="tech-repair__services-item-mark"></div>
+                    <p class="tech-repair__services-item-text">
+                        И другие виды услуг <br>
+                        по договоренности с Заказчиком.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="tech-refueling">
+            <h2 class="tech-refueling__title main-section__title">Ремонт компьютерной и орг. техники</h2>
+            <strong class="tech-refueling__description">
+                Выберите производителя
+            </strong>
+            <form class="manufacture-form" action="#" method="GET">
+                <select id="manufacture-selector" class="manufacture-form__select" name="manufacture">
+                    <option class="manufacture-form__select-option" 
+                        data-img-src="assets/images/hp-logo.png"
+                        data-img-alt="HP" value="hp">
+                    </option>
+                    <option class="manufacture-form__select-option"
+                        data-img-src="assets/images/kyocera-logo.png"
+                        data-img-alt="Kyocera" value="kyocera">
+                    </option>
+                    <option class="manufacture-form__select-option"
+                        data-img-src="assets/images/canon-logo.png"
+                        data-img-alt="Canon" value="canon">
+                    </option>
+                    <option class="manufacture-form__select-option"
+                        data-img-src="assets/images/panasonic-logo.png"
+                        data-img-alt="Panasonic" value="panasonic">
+                    </option>
+                    <option class="manufacture-form__select-option"
+                        data-img-src="assets/images/ricoh-logo.png"
+                        data-img-alt="Ricoh" value="ricoh">
+                    </option>
+                    <option class="manufacture-form__select-option"
+                        data-img-src="assets/images/samsung-logo.png"
+                        data-img-alt="Samsung" value="samsung">
+                    </option>
+                    <option class="manufacture-form__select-option"
+                        data-img-src="assets/images/oki-logo.png"
+                        data-img-alt="OKI" value="oki">
+                    </option>
+                    <option class="manufacture-form__select-option"
+                        data-img-src="assets/images/epson-logo.png"
+                        data-img-alt="Epson" value="epson">
+                    </option>
+                </select>
+                <button class="tech-refueling__make-order-btn">Заказать заправку катриджей</button>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <strong class="main-footer__description">Подпишитесь на рассылку новостей от SHOPF1</strong>
+        <form class="main-footer__subscribe-form" action="#" method="POST">
+            <input class="main-footer__subscribe-form-field" 
+                type="text"
+                placeholder="Введите ваш email адрес">
+            <button class="main-footer__subscribe-form-btn">Подписаться</button>
+        </form>
+        <ul class="main-footer__nav">
+            <li><a class="main-footer__nav-item-link main-footer__nav-item-link_current" href="index.html">Главная</a></li>
+            <li><a class="main-footer__nav-item-link" href="#">Статьи</a></li>
+            <li><a class="main-footer__nav-item-link" href="#">Услуги</a></li>
+            <li><a class="main-footer__nav-item-link" href="#">Контакты</a></li>
+            <li><a class="main-footer__nav-item-link" href="#">О компании</a></li>
+        </ul>
+        <p class="main-footer__copyright">
+            ShopF1 © 2003-2019 гг. Все права защищены. <br>
+        </p>
+        <p class="main-footer__public">
+            Информация, указанная на сайте, не является публичной офертой.
+            Продавец оставляет за собой право в любое
+            время вносить какие-либо изменения в данные предложения без предварительного уведомления.
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.1/image-picker.js"></script>
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>

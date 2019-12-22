@@ -1,6 +1,8 @@
-@import "variables.scss";
+$corporate-color: #12B8FF;
+$corporate-color_dark: #1F91D1;
 
 @mixin filled-button {
+    display: block;
     font-size: 17px;
     border: none;
     color: #FFFFFF;
@@ -10,6 +12,7 @@
 }
 
 @mixin empty-button  {
+    display: block;
     font-size: 17px;
     border: 1px solid $corporate-color;
     color: $corporate-color;
